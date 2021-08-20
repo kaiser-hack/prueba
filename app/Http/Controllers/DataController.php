@@ -69,6 +69,9 @@ class DataController extends Controller
      */
     public function show($id)
     {
+
+        $user = User::findOrFail($id);
+        return view('show', compact('user'));
        
     }
 

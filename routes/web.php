@@ -18,6 +18,8 @@ Route::delete('/eliminar/{id}', [DataController::class, 'destroy'])->name('destr
 
  
 Route::get('/', [DataController::class, 'index'])->name('index');
+Route::get('/show/{id}', [DataController::class, 'show'])->name('show');
+
 Route::get('/edit/{id}', [DataController::class, 'edit'])->name('edit');
 Route::put('/edit/{id}', [DataController::class, 'update'])->name('update');
 

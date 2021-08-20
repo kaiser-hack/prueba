@@ -46,7 +46,7 @@
   @foreach ($user as $item)
   <tbody>
       <th> {{$item->id}} </th>
-      <td> {{$item->name}}</td>
+      <td> <a href=" {{ route('show', $item->id ) }}">{{$item->name}}</a></td>
       <td> {{$item->last_name}}</td>
       <td>{{$item->fecha_nacimiento}}</td>
       <td>{{$item->email}}</td>
